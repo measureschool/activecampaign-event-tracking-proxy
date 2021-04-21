@@ -10,7 +10,6 @@ Send Event Tracking data to ActiveCampaign with Google Tag Manager and a Google 
 
 ## Testing
 
-Use this query string attached to your Cloud Functions URL ?action=trackEvent&eventName=*EVENTNAME*&eventData=*EVENTDATA*&contactId=*CONTACTID*
-Replace EVENTNAME, EVENTDATA and CONTACTID with your dummy data
-
+Use this query string attached to your Cloud Functions URL ?action=trackEvent&eventName=**EVENTNAME**&eventData=**EVENTDATA**&contactId=**CONTACTID**  
+Replace EVENTNAME, EVENTDATA and CONTACTID with your dummy data  
 (e.g. https://us-central1-cloud-functions-2939.cloudfunctions.net/EventToActiveCampaign?action=trackEvent&eventName=watched&eventData=true&contactId=65473 )
