@@ -8,4 +8,7 @@ Send Event Tracking data to ActiveCampaign with Google Tag Manager and a Google 
 2. The GTM Tracking with the ActiveCampaign Event Tracking Template
 3. A way to identify the user
 
+## Testing
 
+Use this query string attached to your Cloud Functions URL ?action=trackEvent&eventName=*EVENTNAME*&eventData=*EVENTDATA*&contactId=*CONTACTID*
+(e.g. https://us-central1-cloud-functions-2939.cloudfunctions.net/EventToActiveCampaign?action=trackEvent&eventName=watched&eventData=true&contactId=65473 )
