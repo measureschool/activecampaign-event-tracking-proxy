@@ -56,7 +56,7 @@ async function sendEvent(email, eventName, eventData) {
 
     return new Promise((resolve, reject) => {
         let url = 'https://trackcmp.net/event';
-        let data = 'actid=' + ACTID + '&key=' + EVENTKEY + '&event=' + eventName + '&eventdata=' + eventData + '&visit=%7B%22email%22%3A%22' + email + '%22%7D';
+        let data = 'actid=' + ACTID + '&key=' + EVENTKEY + '&event=' + eventName + '&eventdata=' + eventData + '&visit=%7B%22email%22%3A%22' + encodeURIComponent(email) + '%22%7D';
         axios
             .post(url, data, { headers: { 'content-type': 'application/x-www-form-urlencoded' } })
             .then(res => {
