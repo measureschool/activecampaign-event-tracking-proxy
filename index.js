@@ -5,7 +5,7 @@ const ACTID = '333333333333333' //repalce the 3s with your AciveCampaign ID (e.g
 
 
 const axios = require('axios')
-exports.helloWorld = async(req, res) => {
+exports.activeCampaignProxy = async(req, res) => {
     let action = req.query.action
     let hash = req.query.hash
     let contactId = req.query.contactId
